@@ -1,7 +1,7 @@
 package com.project.backend.controller;
 
 import com.project.backend.model.dto.StockDTO;
-import com.project.backend.services.StockService;
+import com.project.backend.service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
