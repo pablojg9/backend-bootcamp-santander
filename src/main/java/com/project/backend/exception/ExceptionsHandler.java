@@ -16,4 +16,8 @@ public class ExceptionsHandler extends ResponseEntityExceptionHandler {
 
     }
 
+    @ExceptionHandler(NotFoundException.class)
+    protected ResponseEntity<ExceptionResponse> handlerSecurity(NotFoundException e) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ExceptionResponse(e.getMessage()));
+    }
 }

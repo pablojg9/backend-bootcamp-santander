@@ -16,3 +16,6 @@ spring:
     generate-ddl: false
     hibernate:
       ddl-auto: none
+
+application:
+  description: Projeto criado pelo Pablo Junior - Bootcamp Santander
